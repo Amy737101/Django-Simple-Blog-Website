@@ -1,0 +1,26 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+<h1>Log in</h1>
+<div class="center-form">
+    <div class="form-container">
+    <h3>Log in with your Username and Password</h3>
+    <br><br><br>
+    <form class="site-form" action="{% url 'accounts:login' %}" method="post">
+    {% csrf_token %}
+    {{ form.username.label_tag }}
+    {{ form.username }}
+    <br><br><br>
+    {{ form.password.label_tag }}
+    {{ form.password }}
+    {% if request.GET.next %}
+       <input type="hidden" name="next" value="{{ request.GET.next }}">
+    {% endif %}  
+    <br> <br> <br>
+    <input type="submit" value="Login">
+    <br><br><br>
+    Not a Member ? Register Here
+   </form>
+</div>
+   </div>
+{% endblock %}

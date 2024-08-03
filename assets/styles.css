@@ -1,0 +1,110 @@
+body{
+    background-color:#fff;
+    background-image: url(bg1.jpg);
+    background-repeat: no-repeat;
+    color:#000000;
+}
+
+body *{
+    font-family:Ubuntu;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight:normal;
+    margin: 0;
+}
+
+a,a:hover, a:visited{
+    color:#000000;
+    text-decoration:none;
+}
+
+.wrapper{
+    
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
+div.wrapper h1{
+    text-align: center;
+    margin: 100px auto;
+    font-size: 2.4em;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px 0;
+    
+    
+}
+
+nav{
+    justify-self: end;
+    
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav button{
+    background: none;
+    color: #000000;
+    cursor: pointer;
+    border: 0;
+    font-size: 1em;
+}
+
+.articles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.article{
+    padding: 10px;
+    border: 1px solid #675682;
+    position: relative;
+    padding-bottom: 40px;
+}
+.article h2{
+    font-size: 1.2em;
+}
+.article .author{
+    padding: 10px;
+    background: #675682;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    color: #0f121f;
+
+}
+.article-detail .article{
+    padding: 0;
+}
+.article-detail .article img{
+    max-width: 100%;
+}
+.article-detail .article h2{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 2em;
+}
+
+.article-detail .article h3{
+    text-align: center;
+}
+
+.center-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; /* This makes the form vertically centered */
+}
+.form-container {
+    width: 600px; /* You can adjust the width as needed */
+}
+
