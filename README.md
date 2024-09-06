@@ -1,6 +1,6 @@
 # Django-Simple-Blog-Website
 
-#check master branch for the codes
+#___Check master branch for the codes__
 
 This Simple Blog is developed using Python and Django in the backend and HTML,CSS,JavaScript has been used for the frontend.
 
